@@ -1,0 +1,119 @@
+body, html {
+    margin: auto;
+    padding: auto;
+}
+header {
+    margin: auto;
+    width: auto;
+    height: auto;
+    color: white;
+    background:linear-gradient(to bottom, #0D1630, #4B9960);
+}
+
+h2 {
+    color: #4B9960;
+}
+
+.cards {
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 100px;
+
+}
+
+.card{
+    color: white;
+    padding: 20px;
+    margin: 10px;
+    text-align: center;
+    border-width: 6px;
+    border-color: white;
+    border-style: double;
+    border-radius: 1em;
+    background-color: #0D1630;
+    width: 200px;
+    height: 200px;
+}
+
+.login {
+    background-color: aqua;
+}
+#iconlogin {
+    padding-left:auto;
+    display: flex;
+    justify-content: end;
+}
+
+.tarjetas h2 {
+    text-align: center;
+}
+ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+
+}
+
+.navegacion a{
+    font-size: larger;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-decoration: none;
+    color: white;
+
+}
+
+.hola {
+    display: flex;
+    flex-direction: row;
+}
+
+button {
+    margin-bottom: 3%;
+    padding: 5px;
+    border: white;
+    font-size: large;
+    border-radius:1em;
+
+}
+
+.btn {
+    text-decoration: none;
+    color: white;
+    background-color:#4B9960;
+
+
+}
+
+#creatorneo {
+    color: #4B9960;
+    background-color: white;
+
+}
+
+.segundo {
+    margin: 1em;
+    display: flex;
+    flex-direction: row;
+}
+
+.texto {
+    text-align: justify;
+}
+.texto p {
+    color: #0D1630;
+    font-weight: bold;
+}
+
+.contacto {
+    color: white;
+    background-color: #0D1630;
+    text-align: center;
+}
+
+.elem-contactos {
+    display: flex;
+    flex-direction: row;
+}
