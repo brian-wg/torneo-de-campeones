@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/styleformulario.css">
+    <title>Torneo de campeones</title>
+</head>
+
+<body>
+
+    <!-- <div class="hola">
+            <img src="../images/LogoApp.png" alt="" id="logoapp">
+            <svg width="35" height="35" viewBox="0 0 60 55" fill="none" xmlns="http://www.w3.org/2000/svg"
+                id="iconlogin">
+                <path
+                    d="M30 27.5C25.875 27.5 22.3437 26.1536 19.4062 23.4609C16.4687 20.7682 15 17.5312 15 13.75C15 9.96875 16.4687 6.73177 19.4062 4.03906C22.3437 1.34635 25.875 0 30 0C34.125 0 37.6562 1.34635 40.5937 4.03906C43.5312 6.73177 45 9.96875 45 13.75C45 17.5312 43.5312 20.7682 40.5937 23.4609C37.6562 26.1536 34.125 27.5 30 27.5ZM0 55V45.375C0 43.4271 0.547501 41.6373 1.6425 40.0056C2.7375 38.374 4.19 37.1273 6 36.2656C9.875 34.4896 13.8125 33.1581 17.8125 32.2712C21.8125 31.3844 25.875 30.9398 30 30.9375C34.125 30.9352 38.1875 31.3798 42.1875 32.2712C46.1875 33.1627 50.125 34.4942 54 36.2656C55.8125 37.125 57.2662 38.3717 58.3612 40.0056C59.4562 41.6396 60.0025 43.4294 60 45.375V55H0Z"
+                    fill="black" />
+            </svg>
+        </div> -->
+
+
+    <!-- <nav class="navegacion">
+            <ul>
+                <li><a href="#" target="_blank">Inicio</a></li>
+                <li><a href="#" target="_blank">Nosotros</a></li>
+                <li><a href="#" target="_blank">Contacto</a></li>
+            </ul>
+        </nav> -->
+
+
+    <!-- <h1>Torneo de campeones</h1>
+        <p>Crea de forma sencilla y rapida un torneo para disfutar con tus amigos</p> -->
+
+    <!-- <button>
+            <a href="#" class="btn" id="creatorneo">Crea tu torneo</a>
+        </button> -->
+
+
+
+
+
+
+    <!-- section de formulario -->
+
+
+
+
+
+
+    <section class="formulario">
+        <h2 class="subtitulo">REGISTRARSE</h2>
+        <form method="post"  action="https://formspree.io/f/mzbnoedg" onsubmit="return validarFormulario()">
+
+
+            <div class="datos_contacto">
+                <input type="text" name="Nombre" id="Nombre" maxlength="10"><span class="barra"></span>
+                <label for="Nombre">*Nombre</label>
+
+
+            </div>
+
+
+
+            <div class="datos_contacto">
+                <input type="text" name="Apellido" id="Apellido" maxlength="10"><span class="barra"></span>
+                <label for="Apellido">*Apellido</label>
+
+
+            </div>
+
+
+
+            <div class="datos-opciones">
+                <div class="datos_contacto" id="edad_genero">
+                    <input type="number" name="Edad" id="Edad" maxlength="2"><span class="barra"></span>
+                    <label for="Edad">*Edad</label>
+                </div>
+
+                <div class="datos_contacto">
+                    <select name="genero" id="genero">
+                        <option value=""></option>
+                        <option>femenino</option>
+                        <option>masculino</option>
+                        <option>otro</option>
+                    </select>
+                    <label for="">Seleciona un genero</label>
+                </div>
+            </div>
+
+            <div class="datos_contacto">
+                <input type="email" name="Correo_electronico" id="Correo_electronico"><span class="barra"></span>
+                <label for="Correo electronico">*Correo electronico</label>
+            </div>
+
+
+            <div class="botones">
+                <input type="submit" value="Enviar" class="boton_form">
+                <input type="reset" value="Borrar" class="boton_form" id="res">
+            </div>
+
+
+
+
+
+
+
+        </form>
+        <div class="contenedor-obligatorio">
+            <h5>*datos obligatorios</h5>
+        </div>
+      
+        <script src="../js/formulario.js"></script>
+    </section>
+
+    
+
+
+
+
+
+
+
+</body>
+
+</html>

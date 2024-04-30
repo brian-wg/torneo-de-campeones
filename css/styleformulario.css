@@ -1,0 +1,133 @@
+/*fomulario*/
+
+body,
+html {
+    margin: auto;
+    padding: auto;
+    background: linear-gradient(to bottom, #0D1630, #4B9960);
+    background-attachment: fixed;
+}
+
+body {
+    height: 100vh;
+    /*altura del navegador 100%*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.subtitulo {
+    text-align: center;
+    font-weight: 700;
+}
+
+.formulario {
+    background: #ffffff;
+    padding: 40px 0;
+    border-radius: 10%;
+
+
+}
+
+form {
+    width: 100%;
+}
+
+.formulario .datos_contacto {
+    position: relative;
+    margin: 10px 45px 5px 45px;
+    /* background: #0D1630; */
+}
+
+#Edad {
+    width: 50px;
+}
+
+input,
+#genero {
+
+    background: none;
+    color: #4B9960;
+    font-size: 18px;
+    padding: 10px 0px 10px 0px;
+    display: block;
+    width: 100%;
+    border: none;
+    /*quita todos los bordes*/
+    border-bottom: 1px solid #8d8b8b;
+    /*coloca borde inferior*/
+
+}
+
+
+.datos-opciones {
+    display: flex;
+}
+
+input:focus,
+#genero:focus {
+    outline: none;
+    /* Cambia el color del borde cuando el input está seleccionado */
+    color: #000000;
+}
+
+label {
+    color: #000000a2;
+}
+
+.barra {
+    position: relative;
+    display: block;
+    width: 100%;
+}
+
+.barra::before {
+    content: "";
+    height: 2px;
+    width: 0%;
+    bottom: 0;
+    position: absolute;
+    background: linear-gradient(to right, #4B9960, #4B9960);
+    transition: 0.3s ease width;
+    left: 0;
+
+}
+
+input:focus~.barra::before {
+    width: 100%;
+}
+
+.botones {
+    display: flex;
+    padding: 30px 0 0 0;
+    justify-content: center;
+    align-items: center;
+}
+
+.boton_form {
+    border: 1px solid #ee0f0f;
+    height: 25px;
+    width: 60px;
+    border-radius: 5px;
+    text-align: center;
+    line-height: 5px;
+    margin: 0 10px;
+    font-size: 14px;
+    color: #ffffff;
+    background-color: #c73131;
+}
+
+.contenedor-obligatorio {   
+    position: relative;
+    height: 20px;
+    padding-top: 10px;
+}
+
+.contenedor-obligatorio  h5 {
+    margin: 0;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    padding-right: 45px;
+}

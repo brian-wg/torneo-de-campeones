@@ -1,78 +1,109 @@
 <!DOCTYPE html>
 <html lang="es">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="style.css">
     <title>Torneo de campeones</title>
 </head>
-
 <body>
-    <nav class="menu">
-        <ul class="botones">
-            <li><a href="#" target="_blank" class="button_slide slide_left">Inicio</a></li>
-            <li><a href="#" target="_blank" class="button_slide slide_left">Nosotros</a></li>
-            <li><a href="#" target="_blank" class="button_slide slide_left">Contacto</a></li>
+    <header>
+        <div class="hola">
+        <img src="./images/LogoApp.png" alt="" id="logoapp">
+        <svg width="35" height="35" viewBox="0 0 60 55" fill="none" xmlns="http://www.w3.org/2000/svg" id="iconlogin">
+            <path d="M30 27.5C25.875 27.5 22.3437 26.1536 19.4062 23.4609C16.4687 20.7682 15 17.5312 15 13.75C15 9.96875 16.4687 6.73177 19.4062 4.03906C22.3437 1.34635 25.875 0 30 0C34.125 0 37.6562 1.34635 40.5937 4.03906C43.5312 6.73177 45 9.96875 45 13.75C45 17.5312 43.5312 20.7682 40.5937 23.4609C37.6562 26.1536 34.125 27.5 30 27.5ZM0 55V45.375C0 43.4271 0.547501 41.6373 1.6425 40.0056C2.7375 38.374 4.19 37.1273 6 36.2656C9.875 34.4896 13.8125 33.1581 17.8125 32.2712C21.8125 31.3844 25.875 30.9398 30 30.9375C34.125 30.9352 38.1875 31.3798 42.1875 32.2712C46.1875 33.1627 50.125 34.4942 54 36.2656C55.8125 37.125 57.2662 38.3717 58.3612 40.0056C59.4562 41.6396 60.0025 43.4294 60 45.375V55H0Z" fill="black"/>
+            </svg>
+        </div>
+
+        
+    <nav class="navegacion">
+        <ul>
+        <li><a href="#" target="_blank">Inicio</a></li>
+        <li><a href="#" target="_blank">Nosotros</a></li>
+        <li><a href="#" target="_blank">Contacto</a></li>
         </ul>
-
- <h1 class="titulo1">Torneo de <br>campeones</h1>
-        <p class="subtitulo1">Crea de forma sencilla y rapida un <br>torneo para disfutar con tus amigos</p>
-
-        <button class="boton-crear">Crea tu torneo</button>
-
-
-
     </nav>
 
 
+        <h1>Torneo de campeones</h1>
+        <p>Crea de forma sencilla y rapida un torneo para disfutar con tus amigos</p>
+
+        <button>
+            <a href="#" class="btn" id="creatorneo">Crea tu torneo</a>
+        </button>
+        </header>
+        <article class="tarjetas">
+            <h2>Caracteristicas:</h2> <br>
+            <div class="cards">
+                <div class="card">
+                    <div class="card-body">
+                        <svg width="85" height="69" viewBox="0 0 120 117" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M35 102.375V92.625H55V77.5125C50.9167 76.6187 47.2717 74.9336 44.065 72.4571C40.8583 69.9806 38.5033 66.872 37 63.1312C30.75 62.4 25.5217 59.7399 21.315 55.1509C17.1083 50.5619 15.0033 45.1782 15 39V34.125C15 31.4438 15.98 29.1492 17.94 27.2415C19.9 25.3337 22.2533 24.3783 25 24.375H35V14.625H85V24.375H95C97.75 24.375 100.105 25.3305 102.065 27.2415C104.025 29.1525 105.003 31.447 105 34.125V39C105 45.175 102.895 50.5586 98.685 55.1509C94.475 59.7431 89.2467 62.4032 83 63.1312C81.5 66.8687 79.1467 69.9774 75.94 72.4571C72.7333 74.9369 69.0867 76.622 65 77.5125V92.625H85V102.375H35ZM35 52.65V34.125H25V39C25 42.0875 25.9167 44.8711 27.75 47.3509C29.5833 49.8306 32 51.597 35 52.65ZM85 52.65C88 51.5938 90.4167 49.8257 92.25 47.346C94.0833 44.8662 95 42.0842 95 39V34.125H85V52.65Z" fill="white"/>
+                            </svg>
+                            
+                    <h3>Tabla de posiciones</h3>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+                    <button>
+                        <a href="#" class="btn">Botón</a>
+                    </button>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-body">
+                        <svg width="70" height="59" viewBox="0 0 85 69" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M68.6549 40.5C68.6549 41.6867 68.2714 42.8467 67.553 43.8334C66.8346 44.8201 65.8135 45.5892 64.6188 46.0433C63.4242 46.4974 62.1096 46.6162 60.8413 46.3847C59.5731 46.1532 58.4081 45.5818 57.4937 44.7426C56.5794 43.9035 55.9567 42.8344 55.7044 41.6705C55.4522 40.5067 55.5816 39.3003 56.0765 38.2039C56.5713 37.1075 57.4093 36.1705 58.4845 35.5112C59.5597 34.8519 60.8237 34.5 62.1168 34.5C63.8508 34.5 65.5138 35.1321 66.7399 36.2574C67.9661 37.3826 68.6549 38.9087 68.6549 40.5ZM85 27V57C85 60.1826 83.6223 63.2348 81.1701 65.4853C78.7179 67.7357 75.3919 69 71.9239 69H13.0815C9.6135 69 6.28755 67.7357 3.8353 65.4853C1.38306 63.2348 0.00540559 60.1826 0.00540559 57V12.345C-0.0448862 10.7403 0.256171 9.14274 0.890752 7.64678C1.52533 6.15082 2.48054 4.78691 3.69981 3.63581C4.91908 2.4847 6.37764 1.56981 7.98911 0.945295C9.60059 0.32078 11.3322 -0.000662564 13.0815 1.02535e-06H67.0204C68.3209 1.02535e-06 69.5681 0.474107 70.4877 1.31802C71.4073 2.16193 71.9239 3.30653 71.9239 4.5C71.9239 5.69348 71.4073 6.83807 70.4877 7.68198C69.5681 8.5259 68.3209 9 67.0204 9H13.0815C12.6431 8.99979 12.2092 9.0805 11.8055 9.23732C11.4018 9.39414 11.0365 9.62388 10.7316 9.91287C10.4266 10.2019 10.188 10.5442 10.0301 10.9195C9.87225 11.2948 9.79823 11.6954 9.81247 12.0975V12.1275C9.88113 12.9218 10.2784 13.6619 10.9227 14.1961C11.567 14.7302 12.4096 15.0178 13.2776 15H71.9239C75.3919 15 78.7179 16.2643 81.1701 18.5147C83.6223 20.7652 85 23.8174 85 27ZM75.1929 27C75.1929 26.2044 74.8485 25.4413 74.2355 24.8787C73.6224 24.3161 72.7909 24 71.9239 24H13.2776C12.1085 24.0005 10.9441 23.8644 9.81247 23.595V57C9.81247 57.7956 10.1569 58.5587 10.7699 59.1213C11.383 59.6839 12.2145 60 13.0815 60H71.9239C72.7909 60 73.6224 59.6839 74.2355 59.1213C74.8485 58.5587 75.1929 57.7956 75.1929 57V27Z" fill="white"/>
+                            </svg>
+                            
+                    <h3>Uso gratis</h3>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+                    <button>
+                        <a href="#" class="btn">Botón</a>
+                    </button>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-body">
+                        <svg width="85" height="69" viewBox="0 0 120 117" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M35 102.375V92.625H55V77.5125C50.9167 76.6187 47.2717 74.9336 44.065 72.4571C40.8583 69.9806 38.5033 66.872 37 63.1312C30.75 62.4 25.5217 59.7399 21.315 55.1509C17.1083 50.5619 15.0033 45.1782 15 39V34.125C15 31.4438 15.98 29.1492 17.94 27.2415C19.9 25.3337 22.2533 24.3783 25 24.375H35V14.625H85V24.375H95C97.75 24.375 100.105 25.3305 102.065 27.2415C104.025 29.1525 105.003 31.447 105 34.125V39C105 45.175 102.895 50.5586 98.685 55.1509C94.475 59.7431 89.2467 62.4032 83 63.1312C81.5 66.8687 79.1467 69.9774 75.94 72.4571C72.7333 74.9369 69.0867 76.622 65 77.5125V92.625H85V102.375H35ZM35 52.65V34.125H25V39C25 42.0875 25.9167 44.8711 27.75 47.3509C29.5833 49.8306 32 51.597 35 52.65ZM85 52.65C88 51.5938 90.4167 49.8257 92.25 47.346C94.0833 44.8662 95 42.0842 95 39V34.125H85V52.65Z" fill="white"/>
+                            </svg>
+                    <h3>Registro de los partidos</h3>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+                    <button>
+                    <a href="#" class="btn">Botón</a>
+                    </button>
+                    </div>
+                </div>
+            </div>
+        </article>
+        <article class="segundo">
+            <img src="./images/imagen-trofeo-pelota.png" alt="">
+            <div class="texto">
+            <h2>Todo lo que se necesita para armar un torneo</h2>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Unde expedita accusantium voluptates quo, magnam architecto voluptatem illum, deserunt sequi maxime quam facilis incidunt quasi! Quam itaque cupiditate atque corporis ex.</p>
+        </div>
+        </article>
+
+        <article class="contacto">
+            <h2>contacto</h2>
+            <div class="elem-contactos">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3348.161283208156!2d-60.6367242!3d-32.946751!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95b7ab197398e03d%3A0x5666bcb848b0f59f!2sAv.%20San%20Mart%C3%ADn%20%26%20C%C3%B3rdoba%2C%20S2000%20Rosario%2C%20Santa%20Fe!5e0!3m2!1sen!2sar!4v1713139132933!5m2!1sen!2sar" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <form  action="#" class="formulario">
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" placeholder="Ingrese su nombre" required><br><br>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" placeholder="Ingrese su correo electrónico" required><br><br>
+
+                <label for="mensaje">Mensaje:</label><br>
+                <textarea id="mensaje" name="mensaje" rows="4" placeholder="Ingrese su mensaje"></textarea><br><br>
+
+                <input type="submit" value="Enviar">
+            </div>
 
 
-    <header>
-       
-    </header>
-
-
-
-
-
-
-
-
-
-    <article>
-        <h2>Caracteristicas:</h2>
-    </article>
-    <article>
-        <h2>Todo lo que se necesita para armar un torneo</h2>
-        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Unde expedita accusantium voluptates quo, magnam
-            architecto voluptatem illum, deserunt sequi maxime quam facilis incidunt quasi! Quam itaque cupiditate atque
-            corporis ex.</p>
-    </article>
-
-    <article>
-        <h2>contacto</h2>
-        <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3348.161283208156!2d-60.6367242!3d-32.946751!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95b7ab197398e03d%3A0x5666bcb848b0f59f!2sAv.%20San%20Mart%C3%ADn%20%26%20C%C3%B3rdoba%2C%20S2000%20Rosario%2C%20Santa%20Fe!5e0!3m2!1sen!2sar!4v1713139132933!5m2!1sen!2sar"
-            width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"
-            referrerpolicy="no-referrer-when-downgrade"></iframe>
-        <form action="#">
-            <label for="nombre">Nombre:</label>
-            <input type="text" id="nombre" name="nombre" placeholder="Ingrese su nombre" required><br><br>
-
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email" placeholder="Ingrese su correo electrónico" required><br><br>
-
-            <label for="mensaje">Mensaje:</label><br>
-            <textarea id="mensaje" name="mensaje" rows="4" placeholder="Ingrese su mensaje"></textarea><br><br>
-
-            <input type="submit" value="Enviar">
-
-
-        </form>
-    </article>
-
+            </form>
+        </article>
+    
 </body>
-
 </html>
