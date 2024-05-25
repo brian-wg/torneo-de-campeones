@@ -1,19 +1,101 @@
-body, html {
-    margin: auto;
-    padding: auto;
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Belanosima:wght@400;600;700&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root{
+    --principalcolor:#4B9960; /*Verde*/
+    --secundariocolor: #0D1630; /*Azul*/
+    --terciariocolor: #ffffff;
+    --doradocolor: #EBC35E;
+    --negrocolor: #000000; 
+    --font:Montserrat;  
 }
-header {
-    margin: auto;
-    width: auto;
-    height: auto;
+
+*{
+    margin: 0;
+    font-family: var(--font);
+}
+
+/*Header*/
+header{
+    position: absolute;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.logo{
+ margin-left:1rem;
+}
+.imagen-logo{
+ width: 100px;
+
+}
+
+.navbar{
+    width: 20%;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.navbar a{
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 800;
+    color: var(--terciariocolor);
+}
+
+.icono-login{
+    margin-right: 1rem;
+}
+.icono-login a{
+    text-decoration: none;
+}
+
+.icono-login i{
+    font-size: 40px;
+    color: var(--terciariocolor);
+    border-radius: 100%;
+    background: var(--principalcolor);
+    padding: 0.5rem;
+    
+}
+
+/* Inicio*/
+.Inicio{
+    width: 100%;
+    background: linear-gradient(180deg, rgba(13,22,48,1) 20%, rgba(75,153,96,1) 100%);
+    height: 75vh;
+    
+
+}
+
+.container-Inicio{
+    height: 74.5vh;
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    border: 2px solid black;
+    margin-left: 100px;
+    
+}
+
+.texto{
+    margin-left: 25rem;
     color: white;
-    background:linear-gradient(to bottom, #0D1630, #4B9960);
+    align-self: center;
+    border: 2px solid red;
+
 }
 
-h2 {
-    color: #4B9960;
+.inicio-image{
+    align-self: end;
+    border: 2px solid white;
+    height: 90%;
 }
 
+/* Cards*/
 .cards {
     display: flex;
     justify-content: space-evenly;
