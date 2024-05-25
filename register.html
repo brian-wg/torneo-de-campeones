@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Torneo De Campeones</title>
+    <link rel="stylesheet" href="assets/registerstyle.css">
+</head>
+<body>
+    <section class="register">
+        <div class="container-inicio">
+            <a href="index.html"><p>Volver al Menu</p></a>
+        </div>
+        <div class="container-register">
+            <div class="logo">
+                <img src="images/LogoApplogin.png" alt="Logo">
+            </div>
+            <form action="" class="formulario-registro" id="formulario">
+                <label for="username">Usuario:</label>
+                <input type="text" id="username" name="username" required>
+                <label for="nombre">Nombre</label>
+                <input type="text" id="nombre" name="nombre" required>
+                <label for="apellido">Apellido</label>
+                <input type="text" id="apellido" name="apellido" required>
+                <label for="email">Correo electronico</label>
+                <input type="email" id="email" name="email">
+                <label for="password">Contraseña:</label>
+                <input type="password" id="password" name="password" required>
+                <label for="repitpassword">Repetir la Contraseña</label>
+                <input type="password" id="repitpassword" name="password" required>
+                <label for="date">Fecha de Cumpleaños</label>
+                <input type="date" id="date" name="date">
+                <div class="contedorbutton">
+                    <input  type="submit" value="Registrarse" class="buttonRegister">
+                    <p class="contrasena">Las Contraseñas no coinciden </p>
+                </div>
+
+            </form>
+        </div>
+    </section>
+    <script src="scripregister.js"></script>
+</body>
+</html>
