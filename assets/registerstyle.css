@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Belanosima:wght@400;600;700&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    font-size: var(--font);
+}
+
+:root{
+    --principalcolor:#4B9960; /*Verde*/
+    --secundariocolor: #0D1630; /*Azul*/
+    --terciariocolor: #ffffff;
+    --doradocolor: #EBC35E;
+    --negrocolor: #000000; 
+    --font:Montserrat;  
+}
+
+
+.register{
+    height: 100vh;
+    background:linear-gradient(180deg, rgba(13,22,48,1) 20%, rgba(75,153,96,1) 100%);
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    justify-self: center;
+    align-content: center;
+
+}
+
+.container-inicio{
+    display: block;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: initial;
+    justify-content: initial;
+    
+}
+
+.container-inicio a{
+    text-decoration: none;
+    color: var(--terciariocolor);
+    font-size: 16px;
+    padding: 15px;
+    cursor: pointer;
+    transition:  ease-in .3s;
+}
+
+.container-inicio a:hover{
+    color: var(--doradocolor);
+}
+
+.container-register{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    justify-self: center;
+    align-content: center;
+    width: 93%;
+    max-width: 500px;
+    height: 90vh;
+    background: var(--terciariocolor);
+}
+
+.logo img{
+    width: 10rem;
+}
+
+.formulario-registro{
+    height: 75%;
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    justify-content: initial;
+    align-content: center;
+}
+
+.formulario-registro label{
+    display: flex;
+    align-items: center;
+    font-size: 1.5rem;
+    color: var(--principalcolor);
+    font-weight: 800;
+}
+
+.formulario-registro input[type="text"], input[type="password"],input[type="email"], input[type="date"]{
+    background: var(--principalcolor);
+    width: 100%;
+    height: 1.7rem;
+    color: var(--terciariocolor);
+    padding: 10px;
+    border: none;
+}
+
+.contedorbutton{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.contedorbutton input[type="submit"] {
+    width: 100%;
+    font-family: var(--font);
+    font-weight: 700;
+    background-color: var(--principalcolor);
+    color: rgb(255, 255, 255);
+    padding: 14px 20px;
+    margin: 15px 0;
+    border: none;
+    cursor: pointer;
+    transition:  ease-in .3s;
+  
+}
+
+.contedorbutton input[type="submit"]:hover {
+    background-color: var(--doradocolor);
+
+}
+
+.contrasena {
+    z-index: -1;
+    color: var(--negrocolor);
+    font-weight: 600;
+}
+.contrasena.incorrecta {
+    z-index: 1;
+}
