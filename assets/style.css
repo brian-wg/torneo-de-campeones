@@ -96,10 +96,14 @@ header{
 }
 
 /* Cards*/
+.tarjetas{
+    height: 75vh;
+}
 .cards {
     display: flex;
     justify-content: space-evenly;
     margin-bottom: 100px;
+    height: 100%;
 
 }
 
@@ -113,61 +117,83 @@ header{
     border-style: double;
     border-radius: 1em;
     background-color: #0D1630;
-    width: 200px;
-    height: 200px;
+    width: 33%;
+    height: 40vh;
 }
 
+.card-body{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+
+}
 .login {
     background-color: aqua;
 }
 #iconlogin {
     padding-left:auto;
     display: flex;
-    justify-content: end;
+    justify-content: center;
 }
 
-.tarjetas h2 {
+.cards {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.card {
+    background-color: #333; /* Color de fondo de las tarjetas */
+    color: white;
+    width: 32%; /* Cada tarjeta ocupa un 32% del ancho total, con el 4% sobrante utilizado para el espacio entre tarjetas */
+    padding: 20px;
+    border-radius: 1rem; /* Opcional: Redondeo de bordes */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     text-align: center;
+    position: relative; /* Para posicionar el botón */
 }
-ul {
+
+.card-body {
     display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    list-style: none;
-    margin: 0;
-    padding: 0;
-
+    flex-direction: column;
+    align-items: center;
+    flex-grow: 1; /* El cuerpo de la tarjeta crece para llenar el espacio disponible */
 }
 
-.navegacion a{
-    font-size: larger;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    text-decoration: none;
+.card svg {
+    margin-bottom: 1rem;
+}
+
+.card h3 {
+    margin: 1rem 0;
+}
+
+.card p {
+    margin-bottom: 1rem;
+}
+
+.card button {
+    background-color: green;
     color: white;
-
+    border: none;
+    padding: 10px 20px;
+    border-radius: 1rem;
+    cursor: pointer;
+    position: absolute;
+    bottom: 20px; /* Espacio desde el margen inferior */
 }
 
-.hola {
-    display: flex;
-    flex-direction: row;
-}
-
-button {
-    margin-bottom: 3%;
-    padding: 5px;
-    border: white;
-    font-size: large;
-    border-radius:1em;
-
-}
-
-.btn {
-    text-decoration: none;
+.card button .boton {
     color: white;
-    background-color:#4B9960;
-
-
+    text-decoration: none;
 }
+
+.card button:hover {
+    background-color: darkgreen; /* Color al pasar el cursor */
+}
+
 
 #creatorneo {
     color: #4B9960;
