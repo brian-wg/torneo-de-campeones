@@ -33,7 +33,7 @@ header{
 }
 
 .navbar{
-    width: 20%;
+    width: 50%;
     display: flex;
     justify-content: space-between;
 
@@ -76,7 +76,6 @@ header{
     width: 80%;
     display: flex;
     justify-content: space-between;
-    border: 2px solid black;
     margin-left: 100px;
     
 }
@@ -85,13 +84,11 @@ header{
     margin-left: 25rem;
     color: white;
     align-self: center;
-    border: 2px solid red;
 
 }
 
 .inicio-image{
     align-self: end;
-    border: 2px solid white;
     height: 90%;
 }
 
