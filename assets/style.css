@@ -231,7 +231,9 @@ header{
 }
 
 .segundo {
-    margin: 1em;
+    width: 80%;
+    padding: auto;
+    margin: auto;
     display: flex;
     flex-direction: row;
 }
@@ -239,6 +241,7 @@ header{
 
 .texto {
     text-align: justify;
+    margin-left: 20px;
 }
 .texto p {
     color: #0D1630;
@@ -257,11 +260,17 @@ header{
     align-items: center;
     align-self: center;
     align-content: center;
+    margin-top: 4rem;
 
 }
 
+.contacto h2 {
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+
+}
 .container-contac{
-    height: 60vh;
+    height: 70vh;
     display: flex;
     flex-wrap: nowrap;
     flex-direction: row;
