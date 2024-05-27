@@ -87,6 +87,11 @@ header{
 
 }
 
+.texto h2{
+    color: #0D1630;
+}
+
+
 .inicio-image{
     align-self: end;
     height: 90%;
@@ -176,10 +181,7 @@ header{
     font-size: 32px;
 }
 
-.card p {
-    margin-bottom: 1rem;
-    font-size: 24px;
-}
+
 
 .card button {
     background-color: var(--principalcolor);
@@ -234,4 +236,14 @@ header{
 .elem-contactos {
     display: flex;
     flex-direction: row;
+}
+
+.footer {
+    background-color: #0D1630;
+
+}
+.footer p{
+    color: white;
+    text-align: center;
+
 }
