@@ -81,7 +81,7 @@ header{
 }
 
 .texto{
-    margin-left: 25rem;
+    margin-left: auto;
     color: white;
     align-self: center;
 
@@ -194,6 +194,22 @@ header{
     bottom: 20px; 
     text-decoration: none;
 }
+.texto button {
+    background-color: var(--principalcolor);
+    color: var(--terciariocolor);
+    border: 2em;
+    padding: 10px 20px;
+    border-radius: 1rem;
+    cursor: pointer;
+    text-decoration: none;
+    margin-top: 5%;
+    transition:  ease-in .10s;
+}
+
+.texto button:hover {
+    background-color: var(--doradocolor); 
+    
+}
 
 .card a .boton {
     font-size: 16px;
@@ -219,6 +235,7 @@ header{
     display: flex;
     flex-direction: row;
 }
+
 
 .texto {
     text-align: justify;
