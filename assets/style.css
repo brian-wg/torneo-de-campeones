@@ -87,6 +87,11 @@ header{
 
 }
 
+.texto h2{
+    color: #0D1630;
+}
+
+
 .inicio-image{
     align-self: end;
     height: 90%;
@@ -152,7 +157,6 @@ ul {
 button {
     margin-bottom: 3%;
     padding: 5px;
-    border: white;
     font-size: large;
     border-radius:1em;
 
@@ -195,4 +199,14 @@ button {
 .elem-contactos {
     display: flex;
     flex-direction: row;
+}
+
+.footer {
+    background-color: #0D1630;
+
+}
+.footer p{
+    color: white;
+    text-align: center;
+
 }
