@@ -1,0 +1,260 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Belanosima:wght@400;600;700&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    font-size: var(--font);
+        
+}
+
+:root{
+    --principalcolor:#4B9960; /*Verde*/
+    --secundariocolor: #0D1630; /*Azul*/
+    --terciariocolor: #ffffff;
+    --doradocolor: #EBC35E;
+    --negrocolor: #000000; 
+    --font:Montserrat;  
+
+}
+
+body,
+html {
+    margin: auto;
+    padding: auto;
+    background: linear-gradient(to bottom, #0D1630, #4B9960);
+    background-attachment: fixed;
+}
+
+.contenedor-principal {
+    background: var(--terciariocolor);
+}
+
+
+header {
+    margin: auto;
+    width: auto;
+    height: auto;
+    color: var(--terciariocolor);
+}
+
+.titulo-torneo{
+    font-weight: 800;
+    text-align: center;
+    font-size: 32px;
+    color: var(--principalcolor);
+    
+}
+
+
+/*cargaEquipo*/
+
+.contenedor-torneo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* align-items: center; */
+    width: 60%;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    margin: 40px auto 0 auto;
+    /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); */
+}
+
+
+
+.item-torneo {
+    display: flex;
+    align-items: center;
+    /* justify-content: flex-start; */
+    color: black;
+    padding: 0px;
+    margin: 10px 0;
+    text-align: center;
+    border-radius: 5px;
+    width: 100%;
+    gap: 10px;
+  
+}
+
+.item-torneo input {
+    background-color: #e0e0e0;
+    padding: 10px;
+    margin: 10px 0;
+    width: auto;
+    width: 400px;
+    border-radius: 5px;
+    font-size: 16px;
+    margin-right: 10px;
+    
+
+}
+
+.item-torneo button {
+    background-color: var(--principalcolor);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    margin: 0 5px;
+    border-radius: 5px;
+    font-size: 14px;
+    cursor: pointer;
+    flex-shrink: 0;
+    width: 120px;
+    height: 50px;
+    text-align: center;
+   
+
+}
+
+.item-torneo button:hover {
+    background-color: var(--doradocolor);
+}
+
+
+/*tablas*/
+.container-tablas{
+    display: flex;
+    justify-content: space-between;
+    /* width: max-content; */
+}
+table {
+    border-collapse: collapse;
+     width: 100%; 
+    border-radius: 20px;
+    border: 2px solid black;
+    background-color: lightgreen;
+    overflow: hidden;
+    
+}
+
+th,
+td {
+    border: 1px solid black;
+
+    padding: 8px;
+    text-align: center;
+
+    max-width: 10px;
+    width: 10px;
+}
+
+th {
+    background-color: darkgreen;
+    color: white;
+}
+
+
+.cell-container {
+    height: 20px;
+    overflow: hidden;
+    overflow-y: auto;
+
+    pointer-events: none;   /*no editable*/
+    user-select: none;
+}
+
+
+
+th:first-child {
+    max-width: 50px;
+    width: 50px;
+}
+
+
+
+.tabla2 {
+    border-collapse: collapse;
+    width: 100%; 
+    
+    min-width: 50%;
+   /* border: 2px solid black; */
+  
+   overflow: hidden;
+
+   table-layout: fixed;
+  
+   
+}
+ .tabla2 td {
+    max-width: 100px;   
+    min-width: 1px;
+    text-align: center;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+
+
+.tabla2 th:first-child,
+.tabla2 th:last-child{
+    max-width: 100px;
+    width: 100px;
+    height: 20px;
+   
+}
+
+.tabla2 th:nth-child(2) {
+     width: 30px;
+     min-width: 30px;   
+}
+
+.tabla2 td:nth-child(2),
+.tabla2 td:nth-child(3) {
+     
+    overflow: hidden;
+    white-space: nowrap; 
+    background-color: rgb(255, 255, 255);
+    
+}
+
+.tabla2 thead tr:first-child th {
+   
+    border-left: none; 
+    border-right: none; 
+}
+
+.tabla2 th[colspan] {
+    text-align: center;
+}
+
+
+
+
+
+
+
+
+
+.navegacion2 {
+    display: flex;
+    justify-content: center;
+ 
+    padding: 10px;
+}
+
+.navegacion2 a {
+    margin: 0 40px;
+    text-decoration: none;
+    font-size: larger;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-decoration: none;
+   
+    color: rgb(0, 0, 0); 
+    display: inline-block;
+    padding: 1px 15px 4px 15px;
+
+    border-radius: 15px;
+    transition: color 0.3s ease; 
+    background-color: #c7160a;
+    
+}
+
+.navegacion2 a:hover {
+  color: rgb(3, 255, 37); 
+  background-color: #a60e0a;
+}
+
+
+
