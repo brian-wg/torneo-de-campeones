@@ -133,6 +133,14 @@ header{
     justify-content: center;
 }
 
+
+.tarjetas h2{
+    text-align: center;
+    margin-top: 5%;
+    color: var(--principalcolor);
+    font-weight: 800;
+    font-size: 32px;
+}
 .cards {
     display: flex;
     justify-content: space-between;
@@ -140,23 +148,23 @@ header{
 }
 
 .card {
-    background-color: #333; /* Color de fondo de las tarjetas */
-    color: white;
-    width: 32%; /* Cada tarjeta ocupa un 32% del ancho total, con el 4% sobrante utilizado para el espacio entre tarjetas */
+    background-color: var(--secundariocolor); 
+    color: var(--terciariocolor);
+    width: 32%; 
     padding: 20px;
-    border-radius: 1rem; /* Opcional: Redondeo de bordes */
+    border-radius: 1rem; 
     display: flex;
     flex-direction: column;
     align-items: center;
     text-align: center;
-    position: relative; /* Para posicionar el botón */
+    position: relative; 
 }
 
 .card-body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    flex-grow: 1; /* El cuerpo de la tarjeta crece para llenar el espacio disponible */
+    flex-grow: 1; 
 }
 
 .card svg {
@@ -165,30 +173,35 @@ header{
 
 .card h3 {
     margin: 1rem 0;
+    font-size: 32px;
 }
 
 .card p {
     margin-bottom: 1rem;
+    font-size: 24px;
 }
 
 .card button {
-    background-color: green;
-    color: white;
+    background-color: var(--principalcolor);
+    color: var(--terciariocolor);
     border: none;
     padding: 10px 20px;
     border-radius: 1rem;
     cursor: pointer;
     position: absolute;
-    bottom: 20px; /* Espacio desde el margen inferior */
+    bottom: 20px; 
 }
 
 .card button .boton {
-    color: white;
+    font-size: 16px;
+    font-weight: 800;
+    color: var(--terciariocolor);
     text-decoration: none;
+    transition:  ease-in .3s;
 }
 
 .card button:hover {
-    background-color: darkgreen; /* Color al pasar el cursor */
+    background-color: var(--doradocolor); 
 }
 
 
