@@ -89,25 +89,44 @@
         </article>
 
         <article class="contacto">
-            <h2>contacto</h2>
-            <div class="elem-contactos">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3348.161283208156!2d-60.6367242!3d-32.946751!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95b7ab197398e03d%3A0x5666bcb848b0f59f!2sAv.%20San%20Mart%C3%ADn%20%26%20C%C3%B3rdoba%2C%20S2000%20Rosario%2C%20Santa%20Fe!5e0!3m2!1sen!2sar!4v1713139132933!5m2!1sen!2sar" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-            <form  action="#" class="formulario">
-                <label for="nombre">Nombre:</label>
-                <input type="text" id="nombre" name="nombre" placeholder="Ingrese su nombre" required><br><br>
+            <h2>Formulario de Contacto</h2>
+            <div class="container-contac">
+                <div class="image-container">
+                    <img src="images/Diseño sin título.svg" alt="Imagen de Contacto">
+                </div>
+                <form id="contactForm" class="formulario-contacto">
+                    <label for="name">Nombre:</label>
+                    <input type="text" id="name" name="name">
+                    <span class="error" id="nameError"></span>
+        
+                    <label for="email">Correo Electrónico:</label>
+                    <input type="email" id="email" name="email">
+                    <span class="error" id="emailError"></span>
+        
+                    <label for="razon">Motivo del Contacto:</label>
+                    <select id="razon" name="razon">
+                        <option value="">Seleccione una opción</option>
+                        <option value="consulta">Consulta</option>
+                        <option value="soporte">Soporte</option>
+                        <option value="otro">Otro</option>
+                    </select>
+                    <span class="error" id="razonError"></span>
+        
+                    <label for="message">Mensaje:</label>
+                    <textarea id="message" name="message" rows="4"></textarea>
+                    <span class="error" id="messageError"></span>
+        
+                    <label for="terms">
+                        <input type="checkbox" id="terms" name="terms"> Acepto los términos y condiciones
+                    </label>
+                    <span class="error" id="termsError"></span>
+        
+                    <button type="submit">Enviar</button>
+                </form>
+        
 
-                <label for="email">Email:</label>
-                <input type="email" id="email" name="email" placeholder="Ingrese su correo electrónico" required><br><br>
-
-                <label for="mensaje">Mensaje:</label><br>
-                <textarea id="mensaje" name="mensaje" rows="4" placeholder="Ingrese su mensaje"></textarea><br><br>
-
-                <input type="submit" value="Enviar">
             </div>
-
-
-            </form>
         </article>
-    
+    <script src="contacto.js"></script>
 </body>
 </html>
